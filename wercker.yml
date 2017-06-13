@@ -20,6 +20,13 @@ build:
     # Read more about steps on our dev center:
     # http://devcenter.wercker.com/docs/steps/index.html
   steps:
+  steps:
+    - cameroncooper/docker@0.0.1:
+        image: redis
+        path: 3.2
+        username: trepid222
+        password: M!ghtyT!tan!
+        email: abhiramj@gmail.com
     - script:
         name: echo
         code: |
